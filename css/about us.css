@@ -1,0 +1,56 @@
+.wrapper{
+    font-family: Roboto Condensed;
+    width: 80%;
+    position: relative;
+    margin-left:23%;
+}
+
+.wrapper img{
+    display: block;
+    width: 70%;
+    height: 80%;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    color: #fff;
+    
+    font-size: 60px;
+}
+.content span{
+    font-size: 24px;
+    display: block;
+    top: 50%;
+    left: 30%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    opacity: 0;
+    transition: 5 ease;
+    background-color: #00b4d8;
+}
+
+.wrapper:hover .overlay{
+    opacity: 1;
+}
+.vision{
+        text-align: center;  
+}
+
+.visiontext{
+    margin: 50px;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-weight: 100;
+}
+
