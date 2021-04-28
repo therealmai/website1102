@@ -1,0 +1,2 @@
+Jomar:
+Ga create nako og database sa registration pero wa pa nako na workout unsaon pag connect sa database, patudlo niya kong rhys. Nakahimo nako og logic sa pag insert though
