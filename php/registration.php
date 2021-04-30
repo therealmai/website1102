@@ -24,13 +24,15 @@ if(isset($_POST['submit'])){
     $password = $_POST['password'];
     $confirm_password = $_POST['confirmPassword'];
 
-    $sql = "INSERT INTO users (first_name,last_name,email_address,phone_number,password,confirm_password) VALUES ('$firstname','$lastname','$email','$phone_num','$password','$confirm_password')";
-    if (mysqli_query($conn, $sql)) {
-        echo "New record has been added successfully !";
-     } else {
-        echo "Error: " . $sql . ":-" . mysqli_error($conn);
-     }
-     mysqli_close($conn);
+    echo "$firstname";
+
+    // $sql = "INSERT INTO users (first_name,last_name,email_address,phone_number,password,confirm_password) VALUES ('$firstname','$lastname','$email','$phone_num','$password','$confirm_password')";
+    // if (mysqli_query($conn, $sql)) {
+    //     echo "New record has been added successfully !";
+    //  } else {
+    //     echo "Error: " . $sql . ":-" . mysqli_error($conn);
+    //  }
+    //  mysqli_close($conn);
 };
 
 
@@ -72,7 +74,7 @@ if(isset($_POST['submit'])){
     
             <!-- Registeration Form -->
             <div class="col-md-7 col-lg-6 ml-auto">
-                <form action="" method="POST">
+                <form action="trial.php" method="POST">
                     <div class="row">
     
                         <!-- First Name -->
@@ -171,33 +173,6 @@ if(isset($_POST['submit'])){
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script>
-    $("#submit").click(function(){
-        var name = $("#firstName").val();
-        var email = $("#lastName"). val();
-        var email = $("#email"). val();
-        var email = $("#phoneNumber"). val();
-        var email = $("#password"). val();
-        var email = $("#passwordConfirmation"). val();
 
-        if(email == '' || password == ''){
-            swal({
-                title: "Unsuccessful",
-                text: "There are fields empty, please fill them!",
-                icon: "error",
-                button: "Try again",
-                });
-        }else{
-            swal({
-                title: "Successfully submitted",
-                icon: "success",
-                button: "Go",
-            }).then(function(){
-                window.location.href = "login.html";
-            })
-        }
-    });
-
-</script>
 </body>
 </html>
