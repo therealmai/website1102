@@ -8,16 +8,17 @@
             $password = $_POST['password'];
             $confirm_password = $_POST['confirmPassword'];
 
-            $sql = "INSERT INTO users (first_name,last_name,email_address,phone_number,password,confirm_password) VALUES ('$firstname','$lastname','$email','$phone_num','$password','$confirm_password')";
-            if (mysqli_query($conn, $sql)) {
+            $sql = "INSERT INTO users (first_name,last_name,email_address,phone_number,`password`,confirm_password) 
+                              VALUES ('$firstname','$lastname','$email','$phone_num','$password','$confirm_password')";
+            if (mysqli_query($mysqli, $sql)) {
                 echo "New record has been added successfully !";
              } else {
-                echo "Error: " . $sql . ":-" . mysqli_error($conn);
+                echo "Error: " . $sql . ":-" . mysqli_error($mysqli);
              }
-             mysqli_close($conn);
+             mysqli_close($mysqli);
      };
 
 ?>
 
 
-<!-- if(isset($_POST['firstname'])&& isset($_POST['lastname'])&&isset($_POST['email'])&&isset($_POST['phone'])&&isset($_POST['password'])&&isset($_POST['passwordConfirmation'])) -->
+<!-- if(isset($_POST['firstname'])&& isset($_POST['lastname'])&&isset($_POST['email'])&&isset($_POST['phone'])&&isset($_POST['password'])&&isset($_PO~

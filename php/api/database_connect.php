@@ -1,18 +1,11 @@
 <?php
 
-$host = 'localhost';
-$dbname = 'tutorial_php';
-$username = 'root';
-$password = '';
 
-try{
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+$mysqli = new mysqli("$host","$username","$password","1202_website");
 
-} catch (PDOException $e) {
-    die("Could not connect to the database $dbname :" . $e->getMessage());
+// Check connection
+if ($mysqli -> connect_errno) {
+  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+  exit();
 }
-$sql = 'SELECT * FROM residents';
-
-    $query = $pdo->query($sql);
-
 ?>
