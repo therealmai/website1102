@@ -23,4 +23,4 @@
 ?>
 
 
-<!-- if(isset($_POST['firstname'])&& isset($_POST['lastname'])&&isset($_POST['email'])&&isset($_POST['phone'])&&isset($_POST['password'])&&isset($_POST['passwordConfirmation'])) -->
+<!-- if(isset($_POST['firstname'])&& isset($_POST['lastname'])&&isset($_POST['email'])&&isset($_POST['phone'])&&isset($_POST['password'])&&isset($_PO~
