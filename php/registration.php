@@ -1,44 +1,3 @@
-<?php
-
-$host = 'localhost';
-$dbname = '1202_website';
-$username = 'root';
-$password = '';
-
-try{
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-
-    $sql = 'SELECT * FROM users';
-
-    $query = $pdo->query($sql);
-
-} catch (PDOException $e) {
-    die("Could not connect to the database $dbname :" . $e->getMessage());
-}
-
-if(isset($_POST['submit'])){
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-    $email = $_POST['email'];
-    $phone_num = $_POST['phone'];
-    $password = $_POST['password'];
-    $confirm_password = $_POST['confirmPassword'];
-
-    echo "$firstname";
-
-    // $sql = "INSERT INTO users (first_name,last_name,email_address,phone_number,password,confirm_password) VALUES ('$firstname','$lastname','$email','$phone_num','$password','$confirm_password')";
-    // if (mysqli_query($conn, $sql)) {
-    //     echo "New record has been added successfully !";
-    //  } else {
-    //     echo "Error: " . $sql . ":-" . mysqli_error($conn);
-    //  }
-    //  mysqli_close($conn);
-};
-
-
-
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -74,7 +33,7 @@ if(isset($_POST['submit'])){
     
             <!-- Registeration Form -->
             <div class="col-md-7 col-lg-6 ml-auto">
-                <form action="trial.php" method="POST">
+                <form action ="api/registration_logic.php" method="POST">
                     <div class="row">
     
                         <!-- First Name -->
