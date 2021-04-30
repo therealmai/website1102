@@ -110,9 +110,10 @@
                         <!-- Submit Button -->
                         <div class="form-group col-lg-12 mx-auto mb-0" id="submit" name="submit">
                             <br><br>
-                            <a href="#" class="btn btn-primary btn-block py-2">
-                                <span class="font-weight-bold">Create your account</span>
-                            </a>
+                            <div class="btn btn-primary btn-block py-2">
+                                <input class="font-weight-bold" type="submit" name="submit" value="Create your account">
+                                <!-- <span class="font-weight-bold">Create your account</span> -->
+                            </div>
                         </div><br>
     
                         <!-- Already Registered -->

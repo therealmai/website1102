@@ -1,6 +1,7 @@
 <?php
-     require 'api/database_connect.php';
-     if(isset($_POST['submit'])){
+    require 'database_connect.php';
+    var_dump($_POST);
+    if(isset($_POST['submit'])){
             $firstname = $_POST['firstname'];
             $lastname = $_POST['lastname'];
             $email = $_POST['email'];
@@ -8,14 +9,16 @@
             $password = $_POST['password'];
             $confirm_password = $_POST['confirmPassword'];
 
-            $sql = "INSERT INTO users (first_name,last_name,email_address,phone_number,password,confirm_password) VALUES ('$firstname','$lastname','$email','$phone_num','$password','$confirm_password')";
-            if (mysqli_query($conn, $sql)) {
+            $sql = "INSERT INTO users (first_name,last_name,email_address,phone_number,password,confirm_password) 
+                                VALUES ('$firstname','$lastname','$email','$phone_num','$password','$confirm_password')";
+            // var_dump(mysqli_query($mysqli, $sql));
+            if (mysqli_query($mysqli, $sql)) {
                 echo "New record has been added successfully !";
-             } else {
-                echo "Error: " . $sql . ":-" . mysqli_error($conn);
-             }
-             mysqli_close($conn);
-     };
+            } else {
+            echo "Error: " . $sql . ":-" . mysqli_error($mysqli);
+            }
+            mysqli_close($mysqli);
+    };
 
 ?>
 
