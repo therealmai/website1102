@@ -1,5 +1,5 @@
 <?php
-require("database_connect.php");
+require("api/database_connect.php"); /*gi usab nako ang file directory*/
 if($_SERVER["REQUEST_METHOD"] == "POST") {
    
     
