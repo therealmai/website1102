@@ -11,7 +11,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 }
  
 // Include config file
-require_once "api/database_connect.php";
+require_once "database_connect.php";
  
 // Define variables and initialize with empty values
 $email = $password = "";
