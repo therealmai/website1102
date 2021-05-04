@@ -13,7 +13,7 @@
                                 VALUES ('$firstname','$lastname','$email','$phone_num','$password','$confirm_password')";
             // var_dump(mysqli_query($mysqli, $sql));
             if (mysqli_query($mysqli, $sql)) {
-                echo "New record has been added successfully !";
+                header("location: ../login.php");
             } else {
             echo "Error: " . $sql . ":-" . mysqli_error($mysqli);
             }
