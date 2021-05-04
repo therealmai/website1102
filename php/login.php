@@ -21,7 +21,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  
     // Check if username is empty
     if(empty(trim($_POST["email"]))){
-        $username_err = "Please enter username.";
+        $username_err = "Please enter a username.";
+        echo "nanana";
     } else{
         $email = trim($_POST["email"]);
     }
@@ -132,14 +133,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         <div class="line"></div> <small class="or text-center">Or</small>
                         <div class="line"></div>
                     </div>
-
-                    <?php if (!empty($login_err)) { ?>
+    
+                    
+                    <?php /* ?>
                     <div class="row px-3 mb-4">
-                        <div class="bg-danger text-white px-4 py-3">
-                            <?php echo $login_err; ?>
-                        </div>
+                        
+                            
+                            <?php if (!empty($login_err)) { echo $login_err; ?>
+                        
+                        
                     </div>
-                    <?php } ?>
+                    <?php }*/ ?>
 
                     <div class="row px-3"> <label class="mb-1">
                             <h6 class="mb-0 text-sm">Email Address</h6>
