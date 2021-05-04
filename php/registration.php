@@ -26,7 +26,7 @@
     <div class="container">
         <div class="row py-5 mt-4 align-items-center">
             <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
-                <h1 style="font-family: Roboto Condensed; padding-left: 40px; font-weight: 700;">Create an Account <span style="padding-left: 60px;">New User!</span></h1>
+                <h1 class=".create" style="font-family: Roboto Condensed;">Create an Account</h1>
                 <img src="../img/water_bowl_animation_2.gif" alt="" class="img-fluid mb-3 d-none d-md-block">
                 
             </div>
@@ -109,9 +109,7 @@
                         
                         <!-- Submit Button -->
                         <div class="form-group col-lg-12 mx-auto mb-0" id="submit" name="submit">
-                            <br><br>
-                            <div class="btn btn-primary btn-block py-2">
-                                <input class="font-weight-bold" type="submit" name="submit" value="Create your account">
+                                <input class = "btn btn-primary btn-block py-2" class="font-weight-bold" type="submit" name="submit" style="font-family:Roboto Condensed; font-weight: 700;"value="Create your account">
                                 <!-- <span class="font-weight-bold">Create your account</span> -->
                             </div>
                         </div><br>
