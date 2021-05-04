@@ -11,6 +11,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     $active = $row['active'];
     
+    // Login with password hash
+    // if (password_verify($mypassword, $row['password'])) {
+    //     echo "nice";
+    // }
+
     $count = mysqli_num_rows($result);
     
     if($count == 1) {
