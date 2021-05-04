@@ -6,8 +6,8 @@
             $lastname = $_POST['lastname'];
             $email = $_POST['email'];
             $phone_num = $_POST['phone'];
-            $password = password_hash($_POST['password'], PASSWORD_ARGON2ID, ['cost' => 10]);
-            $confirm_password = $_POST['confirmPassword'];
+            $password = password_hash($_POST['password'], PASSWORD_BCRYPT, ['cost' => 10]);
+            $confirm_password = password_hash($_POST['confirmPassword'], PASSWORD_BCRYPT,['cost'=> 10]);
 
             $sql = "INSERT INTO users (first_name,last_name,email_address,phone_number,password,confirm_password) 
                                 VALUES ('$firstname','$lastname','$email','$phone_num','$password','$confirm_password')";
