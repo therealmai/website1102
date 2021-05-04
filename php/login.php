@@ -1,5 +1,4 @@
 <?php
-
 // Initialize the session
 if(isset($_POST['submit'])){
 session_start();
@@ -24,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty(trim($_POST["email"]))){
         $username_err = "Please enter username.";
     } else{
-        $username = trim($_POST["email"]);
+        $email = trim($_POST["email"]);
     }
     
     // Check if password is empty
@@ -37,27 +36,39 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT id, email, password FROM users WHERE username = ?";
+        $sql = "SELECT `user_id`, `email_address`, `password` FROM `users` WHERE `email_address` = ?";
         
         if($stmt = mysqli_prepare($mysqli, $sql)){
-            // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "s", $param_username);
-            
             // Set parameters
             $param_email = $email;
+            
+            // Bind variables to the prepared statement as parameters
+            mysqli_stmt_bind_param($stmt, "s", $param_email);
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Store result
+
+                // echo "Naabot na diri";
                 mysqli_stmt_store_result($stmt);
+                // var_dump(mysqli_stmt_store_result($stmt));
+                var_dump($stmt);
+                // var_dump(mysqli_stmt_num_rows($stmt));
                 
                 // Check if username exists, if yes then verify password
                 if(mysqli_stmt_num_rows($stmt) == 1){                    
-                    // Bind result variables
+                    // Bind result variables but not yet stored
                     mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
+                    
+                    // stmt_fetch stores the bind_result to the variables declared
                     if(mysqli_stmt_fetch($stmt)){
+                        // var_dump($id, $username, $hashed_password);
                         if(password_verify($password, $hashed_password)){
                             // Password is correct, so start a new session
+                            /**
+                             * *session_start() is unnecessary because there's already one 
+                             * *in the beginning of the file
+                             */
                             session_start();
                             
                             // Store data in session variables
@@ -121,6 +132,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         <div class="line"></div> <small class="or text-center">Or</small>
                         <div class="line"></div>
                     </div>
+
+                    <?php if (!empty($login_err)) { ?>
+                    <div class="row px-3 mb-4">
+                        <div class="bg-danger text-white px-4 py-3">
+                            <?php echo $login_err; ?>
+                        </div>
+                    </div>
+                    <?php } ?>
+
                     <div class="row px-3"> <label class="mb-1">
                             <h6 class="mb-0 text-sm">Email Address</h6>
                         </label> <input class="mb-4" type="text" id="email" name="email" placeholder="Enter a valid email address" name="email">    </div>
