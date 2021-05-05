@@ -26,7 +26,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     } else{
         $username = trim($_POST["email"]);
     }
-    
     // Check if password is empty
     if(empty(trim($_POST["password"]))){
         $password_err = "Please enter your password.";
@@ -38,19 +37,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
         $sql = "SELECT id, email, password FROM users WHERE username = ?";
-        
+        var_dump($mysqli);
         if($stmt = mysqli_prepare($mysqli, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "s", $param_username);
-            
+          
             // Set parameters
             $param_email = $email;
-            
+           
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Store result
                 mysqli_stmt_store_result($stmt);
-                
+               
                 // Check if username exists, if yes then verify password
                 if(mysqli_stmt_num_rows($stmt) == 1){                    
                     // Bind result variables
