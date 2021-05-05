@@ -118,7 +118,7 @@
                         
                         <div class="text-center w-100">
                             <br>
-                            <p class="text-muted font-weight-bold">Already Registered? <a href="../html/login.html" class="text-primary ml-2">Login</a></p><br><br>
+                            <p class="text-muted font-weight-bold">Already Registered? <a href="login.php" class="text-primary ml-2">Login</a></p><br><br>
                         </div>
     
                     </div>

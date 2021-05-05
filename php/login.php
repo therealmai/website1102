@@ -53,7 +53,7 @@
                         <div class="custom-control custom-checkbox custom-control-inline"> <input id="chk1" type="checkbox" name="chk" class="custom-control-input"> <label for="chk1" class="custom-control-label text-sm">Remember me</label> </div> 
                     </div>
                     <div class="row mb-3 px-3"> <input type="submit" value="Login" name="submit" class="btn btn-blue text-center"></button> </div>
-                   <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? <a class="text-danger">Register</a></small> </div>   
+                   <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? <a class="text-danger" href="registration.php">Register</a></small> </div>   
                 </form>       
                 </div>  
             </div>
