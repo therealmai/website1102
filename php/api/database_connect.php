@@ -13,6 +13,7 @@ const PASSWORD ='';
         echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
         exit();
     }
+    // var_dump($mysqli);
 // } catch (PDOException $e) {
 //     die("Could not connect to the database $dbname :" . $e->getMessage());
 // }

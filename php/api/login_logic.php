@@ -17,6 +17,8 @@ require_once "database_connect.php";
 $email = $password = "";
 $email_err = $password_err = $login_err = "";
  
+
+
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
@@ -37,25 +39,29 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT id, email, password FROM users WHERE username = ?";
-        
+        $sql = "SELECT `user_id`, `email_address`, `password` FROM `users` WHERE `email_address` = ?";
+        var_dump(mysqli_prepare($mysqli, $sql));
         if($stmt = mysqli_prepare($mysqli, $sql)){
+            echo "Hello";
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "s", $param_username);
             
             // Set parameters
             $param_email = $email;
             
+            
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Store result
                 mysqli_stmt_store_result($stmt);
+                
                 
                 // Check if username exists, if yes then verify password
                 if(mysqli_stmt_num_rows($stmt) == 1){                    
                     // Bind result variables
                     mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
                     if(mysqli_stmt_fetch($stmt)){
+                        
                         if(password_verify($password, $hashed_password)){
                             // Password is correct, so start a new session
                             session_start();
