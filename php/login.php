@@ -29,6 +29,11 @@
                         <div class="line"></div> <small class="or text-center">Or</small>
                         <div class="line"></div>
                     </div>
+
+                    <?php if(isset($_GET['login_err'])) { ?>
+                        <div>Login Error</div>
+
+                    <?php } ?>
     
                     
                     <!-- <?php ?>

@@ -98,4 +98,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     mysqli_close($mysqli);
 }}
 
+header("location: ../login.php?login_err=1");
+
 ?>
