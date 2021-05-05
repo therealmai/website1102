@@ -104,7 +104,7 @@
                                     <img src="../img/padlock-icon-rounded-BqfJzM-clipart.png" width="20">
                                 </span>
                             </div>
-                            <input id="confirmPassword" type="text" name="confirmPassword" placeholder="Confirm Password" class="form-control bg-white border-left-0 border-md">
+                            <input id="password" type="password" name="confirmPassword" placeholder="Confirm Password" class="form-control bg-white border-left-0 border-md">
                         </div>
                         
                         <!-- Submit Button -->
