@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <section style="background-color: #fef7f0;">
+    <section style>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light py-3">
             <div class="container">
@@ -26,7 +26,7 @@
     <div class="container">
         <div class="row py-5 mt-4 align-items-center">
             <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
-                <h1 class=".create" style="font-family: Roboto Condensed;">Create an Account</h1>
+                <h1 class=".create" style="font-family: Roboto Condensed; font-size: 100%">Create an Account</h1>
                 <img src="../img/water_bowl_animation_2.gif" alt="" class="img-fluid mb-3 d-none d-md-block">
                 
             </div>

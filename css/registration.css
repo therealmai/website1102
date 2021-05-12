@@ -22,7 +22,9 @@
 
 body {
     min-height: 100vh;
+    background-color: #fef7f0;
 }
+
 
 .form-control:not(select) {
     padding: 1.5rem 0.5rem;
