@@ -15,7 +15,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light py-3">
             <div class="container">
-                <a href="login.html" class="navbar-brand">
+                <a href="login.php" class="navbar-brand">
                     <img src="../img/aquaprowithtext.png" alt="logo" width="250" style="float: right;">
                 </a>
             </div>
