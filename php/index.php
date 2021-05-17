@@ -43,7 +43,7 @@
           <h5 class="card-title"style="font-size: 28px;font-family: Roboto Condensed";><b>Water Quality Report</b></h5>
           <p class="card-text"style="font-size: 20px;" >We <b>provide clean, safe and portable water</b> that is affordable for eveyone.</p>
           <div style="margin-top: 47px;">
-            <a href="services.html"> <button class="button2nd button2x">Learn More</button></a>
+            <a href="services.php"> <button class="button2nd button2x">Learn More</button></a>
       </div>
         </div>
     
@@ -54,7 +54,7 @@
           <h5 class="card-title" style="font-size: 28px;font-family: Roboto Condensed;"><b>Utilities</b></h5>
           <p class="card-text" style="font-size: 20px;">Know our plans and what are the essential <b>services</b> that play a vital role in economic and social development.</p>
           <div>
-            <a href="services.html"><button class="button2nd button2x">Learn More</button></a> 
+            <a href="services.php"><button class="button2nd button2x">Learn More</button></a> 
       </div>
         </div>
       </div>
@@ -64,7 +64,7 @@
           <h5 class="card-title"style="font-size: 28px;font-family: Roboto Condensed;"><b>Projects and Proposals</b></h5>
           <p class="card-text" style="font-size: 20px;">We have <b>planned projects</b> to improve and exapnd our services for us to offer you only the best.</p>
           <div style="margin-top: 40px;">
-            <a href="services.html"><button class="button2nd button2x">Learn More</button></a>
+            <a href="services.php"><button class="button2nd button2x">Learn More</button></a>
       </div>
     
         </div>
@@ -85,7 +85,7 @@
   </div>
   <p style="padding-left: 80px; font-weight: 450; font-size: 18px; color: whitesmoke;font-family: Roboto Condensed;">To learn and view more about the different products of AquaPro</p>
   
-  <a href="products.html"><button class="button2nd button2x;" style="margin-left: 79px;">Learn More</button></a> <br><br>
+  <a href="products.php"><button class="button2nd button2x;" style="margin-left: 79px;">Learn More</button></a> <br><br>
 </section>
 
 <section>

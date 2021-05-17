@@ -14,8 +14,8 @@
         <div class="row d-flex">
             <div class="col-lg-6">
                 <div class="card1 pb-5">
-                    <div class="row"> <img src="../img/aquapro.png" class="logo"> </div>
-                    <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> <img src="../img/login.png" class="image"> </div>
+                <div class="row">  <img src="../img/aquapro.png" class="logo"> </div>
+                    <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> <img src="../img/login.png" class="img-fluid"> </div>
                 </div>
             </div>
             <div class="col-lg-6">
