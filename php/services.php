@@ -69,8 +69,38 @@
     </div>
       <br><br>
   </section>
+  <section style="padding-top: 30px; background-color: #caf0f8;">
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">Quality Report</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')"></button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
+      
+          <div id="London" class="tabcontent">
+          <img src="../img/xwater-testing-905x509.jpg.pagespeed.ic.k9JZjQc_wk.jpg" align="left" width="550" style="padding-left:50px; margin: 0px 100px 0px 10px;"/>
+              <div style="text-align: justify; margin-right: 80px;">
+                  <h1 style="font-family: Roboto Condensed; font-size: 56px; font-weight: 500; color: #03045e;"><strong>Quality Report</strong> </h1>
+                  <p style="font-family: Roboto Condensed; font-size: 24px; padding-top: 20px;">Clean water demands sustainable industrialization, intact ecosystems and responsible consumption. Targeted, individual approaches are likely to have knock-on effects and unintended consequences, but an integrated approach will greatly enhance the chances of success of the goals.</p><br><br><br>
+              </div>
+          </div>
 
-  <section style="padding-top: 60px; background-color: #caf0f8;">
+          <div id="Paris" class="tabcontent">
+          <img src="../img/Water_Home.jpg" align="right" width="550" style="margin: 0px 50px 0px 50px;"/>
+               <div style="text-align: justify; margin-left: 65px;">
+                 <h1 style="font-family: Roboto Condensed; font-size: 56px; font-weight: 500; color: #03045e;"><strong>Utilities</strong> </h1>
+                <p style="font-family: Roboto Condensed; font-size: 24px; padding-top: 20px;">A well-run water utility is essential to people’s lives. Only the most efficient, financially viable utilities are able to respond to urban growth, connect the poor, and improve wastewater disposal practices.AquaPro utilities help to identify the capacity gaps in order to better serve customers and set themselves up for potential risks and/or shocks to the water supply and wastewater systems.</p><br>
+              </div>
+          </div>
+
+          <div id="Tokyo" class="tabcontent">
+           <img src="../img/project-work.jpg" align="left" width="550" style="padding-left:50px; margin: 0px 100px 0px 10px;"/>
+              <div style="text-align: justify; margin-right: 80px  ;">
+                <h1 style="font-family: Roboto Condensed; font-size: 56px; font-weight: 500; color: #03045e;"><strong>Projects and Proposals</strong> </h1>
+                <p style="font-family: Roboto Condensed; font-size: 24px; padding-top: 20px;">We have planned projects to improve and exapnd our services. Project Proposals contain key information about your project. They are essential for our benefactors since they’ll use them to evaluate our project and determine whether or not they’ll allocate funds for it.</p><br><br><br><br><br><br><br><br><br>
+              </div>
+          </div>
+      </section>
+  <!-- <section style="padding-top: 60px; background-color: #caf0f8;">
     <div id="report">
     <img src="../img/xwater-testing-905x509.jpg.pagespeed.ic.k9JZjQc_wk.jpg" align="left" width="550" style="padding-left:50px; margin: 0px 100px 0px 10px;"/>
     <div style="text-align: justify; margin-right: 80px  ;">
@@ -96,7 +126,7 @@
     <p style="font-family: Roboto Condensed; font-size: 24px; padding-top: 20px;">We have planned projects to improve and exapnd our services. Project Proposals contain key information about your project. They are essential for our benefactors since they’ll use them to evaluate our project and determine whether or not they’ll allocate funds for it.</p><br><br><br><br><br><br><br><br><br>
     </div>
   </div>
-  </section>
+  </section> -->
 
   <section>
     <footer>
@@ -108,5 +138,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script src="../js/typewrite.js"></script>
+  <script src="../js/tabs.js"></script>
 </body>
 </html>
