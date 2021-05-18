@@ -1,48 +1,41 @@
+
 <?php
-// try daw ni mylze if nadawat nimo
-//2nd try mylze
+echo "ASFERHEDHJFEDHEDXFDEFH"; 
+session_start();
 // Initialize the session
 if(isset($_POST['submit'])){
-session_start();
+
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: ../index.php");
-    exit;
-}
+// if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === TRUE){
+//     header("location: ../index.php");
+//     exit;
+// }
  
 // Include config file
 require_once "database_connect.php";
  
-// Define variables and initialize with empty values
-$email = $password = "";
-$email_err = $password_err = $login_err = "";
  
+            if (empty($_POST['email'])) {
+            $errors[1] = 1;
+            $errortxt = 'Username or email required';
+        }
 
+           else if (empty($_POST['password'])) {
+                $errors[2] = 2;
+                $errortxt = 'Password required';
+            }
+                $username = $_POST['email'];
+                $password = $_POST['password'];
 
-// Processing form data when form is submitted
-if($_SERVER["REQUEST_METHOD"] == "POST"){
- 
-    // Check if username is empty
-    if(empty(trim($_POST["email"]))){
-        $username_err = "Please enter username.";
-    } else{
-        $email = trim($_POST["email"]);
-    }
-    // Check if password is empty
-    if(empty(trim($_POST["password"]))){
-        $password_err = "Please enter your password.";
-    } else{
-        $password = trim($_POST["password"]);
-    }
-    
+                var_dump($errortxt);
     // Validate credentials
-    if(empty($username_err) && empty($password_err)){
+    if (empty($errors) === TRUE) {
         // Prepare a select statement
         $sql = "SELECT `user_id`, `email_address`, `password` FROM `users` WHERE `email_address` = ?";
-        // var_dump(mysqli_prepare($mysqli, $sql));
+       
         if($stmt = mysqli_prepare($mysqli, $sql)){
-            // echo "Hello";
+           
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "s", $param_email);
             
@@ -76,12 +69,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             header("location: ../index.php");
                         } else{
                             // Password is not valid, display a generic error message
-                            $login_err = "Invalid username or password.";
+                            $errortxt = "Invalid username or password.";
                         }
                     }
                 } else{
                     // Username doesn't exist, display a generic error message
-                    $login_err = "Invalid username or password.";
+                    $errortxt = "Invalid username or password.";
                 }
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
@@ -91,11 +84,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             mysqli_stmt_close($stmt);
         }
     }
-    
+    else {
+        echo "<script>alert($errortxt);</script>";
+    }
     // Close connection
     mysqli_close($mysqli);
-}}
+}
 
-header("location: ../login.php?login_err=1");
+header("location: ../login.php");
 
 ?>
