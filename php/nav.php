@@ -4,7 +4,7 @@
 if(isset($_POST['logout'])){
     $logout = $_POST['logout'];
     
-    
+    unset($_SESSION["loggedin"]);
     session_destroy();
     header("location: ../php/login.php");
     

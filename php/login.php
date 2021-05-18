@@ -22,29 +22,21 @@
                 <div class="card2 card border-0 px-4 py-5">
                     <div class="row mb-4 px-3">
                         <h2 class="mb-0 mr-4 mt-2" style="font-family: Roboto Condensed; font-size: 48px;">Sign in:</h2>
-                <form action="api/login_logic.php" method="POST">   
-    
+                
+                
+                <form action="../php/api/login_logic.php" method="POST">   
+  
                     </div>
                     <div class="row px-3 mb-4">
                         <div class="line"></div> <small class="or text-center">Or</small>
                         <div class="line"></div>
                     </div>
 
-                    <?php if(isset($_GET['login_err'])) { ?>
-                        <h1 style="font-size:1.5vw; color: red;">Incorrect Email or Password</h1>
 
-                    <?php } ?>
-    
+                   
                     
-                    <!-- <?php ?>
-                    <div class="row px-3 mb-4">
-                        
-                            
-                            <?php if (!empty($login_err)) { echo $login_err; ?>
-                        
-                        
-                    </div>
-                    <?php } ?> -->
+                    
+                   
 
                     <div class="row px-3"> <label class="mb-1">
                             <h6 class="mb-0 text-sm">Email Address</h6>
@@ -57,7 +49,7 @@
                     <div class="row px-3 mb-4">
                         <div class="custom-control custom-checkbox custom-control-inline"> <input id="chk1" type="checkbox" name="chk" class="custom-control-input"> <label for="chk1" class="custom-control-label text-sm">Remember me</label> </div> 
                     </div>
-                    <div class="row mb-3 px-3"> <input type="submit" value="Login" name="submit" class="btn btn-blue text-center"></button> </div>
+                    <div class="row mb-3 px-3"> <input type="submit" value="submit" name="submit" class="btn btn-blue text-center"></button> </div>
                    <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? <a class="text-danger" href="registration.php">Register</a></small> </div>   
                 </form>       
                 </div>  
