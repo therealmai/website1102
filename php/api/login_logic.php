@@ -1,5 +1,6 @@
 <?php
 // try daw ni mylze if nadawat nimo
+//2nd try mylze
 // Initialize the session
 if(isset($_POST['submit'])){
 session_start();
