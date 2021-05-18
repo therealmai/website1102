@@ -26,12 +26,12 @@ if(isset($_POST['logout'])){
         <nav>
         
             <ul class="nav_links">
-                <li><a style="text-decoration: none;" href="index.html">Home</a></li>
-                <li><a style="text-decoration: none;" href="services.html">Services</a></li>
-                <li><a style="text-decoration: none;" href="products.html">Products</a></li>
-                <li><a style="text-decoration: none;" href="waterfacilities.html">Water Facilities</a></li>
-                <li><a style="text-decoration: none;" href="contact us.html">Contact Us</a></li>
-                <li><a style="text-decoration: none;" href="about us.html">About Us</a></li>
+                <li><a style="text-decoration: none;" href="index.php">Home</a></li>
+                <li><a style="text-decoration: none;" href="services.php">Services</a></li>
+                <li><a style="text-decoration: none;" href="products.php">Products</a></li>
+                <li><a style="text-decoration: none;" href="waterfacilities.php">Water Facilities</a></li>
+                <li><a style="text-decoration: none;" href="contact us.php">Contact Us</a></li>
+                <li><a style="text-decoration: none;" href="about us.php">About Us</a></li>
                 <li><a style="text-decoration: none;"><button type="submit" name="logout"><img src="../img/img_515259.png" width="25px"  alt="logout" value="logout"></a></li>
                 
             </ul>

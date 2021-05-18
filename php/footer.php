@@ -13,7 +13,7 @@
   <div class="footer_nav" style="padding-left: 28%;">
   <nav>
     <ul class="nav_links1">
-        <li><a style="text-decoration: none;" href="#">Home</a></li>
+        <li><a style="text-decoration: none;" href="index.php">Home</a></li>
         <li><a style="text-decoration: none;" href="services.php">Services </a></li>
         <li><a style="text-decoration: none;" href="products.php">Products</a></li>
         <li><a style="text-decoration: none;" href="waterfacilities.php">Water Facilities</a></li>

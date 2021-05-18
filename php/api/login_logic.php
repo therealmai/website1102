@@ -1,5 +1,5 @@
 <?php
-
+// try daw ni mylze if nadawat nimo
 // Initialize the session
 if(isset($_POST['submit'])){
 session_start();
