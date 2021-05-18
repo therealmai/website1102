@@ -21,7 +21,7 @@
         </header>
     <br><br><br>
          <!--Navbar ends-->
-    <h1 style="text-align: center; color: white; font-family: Roboto; font-size: 52px;font-weight: 500; font-size: 72px;">WATER FACILITIES</h1>
+    <h1 style="text-align: center; color: white; font-family: Roboto; font-size: 52px;font-weight: 500; font-size: 72px;">&nbsp;<span class = "txt-type" data-wait="3000" data-words='["WATER FACILITIES"]'></span></h1>
     <p style="text-align: center; color: white; font-family: Roboto Condensed;font-size: 24px">Providing Consistent Quality, Services and Expertise with AquaPro</p>
     <p style="text-align: center; color: white; font-family: Roboto; font: 28px; font-weight: 100; font-size: 18px">______________________________</p>
     <br><br><br>
@@ -66,5 +66,6 @@
     </section>
 
     <script src="../js/script.js"></script>
+    <script src="../js/typewrite.js"></script>
 </body>
 </html>

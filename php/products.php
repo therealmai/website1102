@@ -16,7 +16,7 @@
         <header>
         <?php include "nav.php" ?>
         </header><br><br><br>
-        <h1 style="text-align: center; color: white; font-family: Roboto; font-size: 52px;font-weight: 500; font-size: 72px;">OUR PRODUCTS</h1><br>
+        <h1 style="text-align: center; color: white; font-family: Roboto; font-size: 52px;font-weight: 500; font-size: 72px;">&nbsp;<span class = "txt-type" data-wait="3000" data-words='["OUR PRODUCTS"]'></span></h1><br>
         <p style="text-align: center; color: white; font-family: Roboto Condensed;font-size: 24px">Know our different Products</p><br>
         <p style="text-align: center; color: white; font-family: Roboto; font: 28px; font-weight: 100; font-size: 18px">______________________________</p>
     <br><br><br>
@@ -96,4 +96,5 @@
         </footer>
         </section>
 </body>
+<script src="../js/typewrite.js"></script>
 </html>

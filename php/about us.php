@@ -21,7 +21,7 @@
         </header>
     <br><br><br>
          <!--Navbar ends-->
-    <h1 style="text-align: center; color: white; font-family: Roboto; font-size: 52px;font-weight: 500; font-size: 72px;">ABOUT US</h1>
+    <h1 style="text-align: center; color: white; font-family: Roboto; font-size: 52px;font-weight: 500; font-size: 72px;">&nbsp;<span class = "txt-type" data-wait="3000" data-words='["ABOUT US"]'></span></h1>
     <p style="text-align: center; color: white; font-family: Roboto Condensed;font-size: 24px">Know our History, Vision and Mission</p>
     <p style="text-align: center; color: white; font-family: Roboto; font: 28px; font-weight: 100; font-size: 18px">______________________________</p>
     <br><br><br>
@@ -70,7 +70,7 @@
     </footer>
     </section>
    
-
+    <script src="../js/typewrite.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </body>

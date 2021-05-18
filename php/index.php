@@ -20,7 +20,7 @@
     </header>
 <br><br><br>
      <!--Navbar ends-->
-<h1 style="text-align: center; color: white; font-family: Roboto; font-size: 52px;font-weight: 500; font-size: 72px;">PURE WATER | PURE LOVE</h1>
+<h1 style="text-align: center; color: white; font-family: Roboto; font-size: 52px;font-weight: 500; font-size: 72px;">PURE <span class = "txt-type" data-wait="3000" data-words='["WATER","LOVE"]'></span></h1>
 <p style="text-align: center; color: white; font-family: Roboto Condensed;font-size: 24px">PROVIDING CLEAN WATER FOR THE COMMUNITY IS OUR MAIN GOAL</p>
 <p style="text-align: center; color: white; font-family: Roboto; font: 28px; font-weight: 100; font-size: 18px">Water from the People, for the People, by the People</p>
 <a href="#services"><button class="button4" >Learn More</button></a>
@@ -132,6 +132,7 @@
 </section>
 </body>
 <!--Bootstrap Link JS-->
+<script src="../js/typewrite.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </html>
