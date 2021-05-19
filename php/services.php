@@ -72,8 +72,8 @@
   <section style="padding-top: 30px; background-color: #caf0f8;">
       <div class="tab">
       <button class="tablinks" onclick="openCity(event, 'London')">Quality Report</button>
-      <button class="tablinks" onclick="openCity(event, 'Paris')"></button>
-      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Utilities</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Projects and Proposals</button>
     </div>
       
           <div id="London" class="tabcontent">
