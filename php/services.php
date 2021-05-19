@@ -109,39 +109,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script src="../js/typewrite.js"></script>
-  <script>
-var content1 = document.getElementById("content1");
-var content2 = document.getElementById("content2");
-var content3 = document.getElementById("content3");
-var btn1 = document.getElementById("btn1");
-var btn2 = document.getElementById("btn2");
-var btn3 = document.getElementById("btn3");
-
-function openTab1(){
-  content1.style.transform = "translateX(0)";
-  content2.style.transform = "translateX(100%)";
-  content3.style.transform = "translateX(100%)";
-  content1.style.transtitionDelay ="0.3s";
-  content2.style.transtitionDelay ="0s";
-  content3.style.transtitionDelay ="0s";
-}
-function openTab2(){
-  content1.style.transform = "translateX(100%)";
-  content2.style.transform = "translateX(-100%)";
-  content3.style.transform = "translateX(100%)";
-  content1.style.transtitionDelay ="0s";
-  content2.style.transtitionDelay ="0.3s";
-  content3.style.transtitionDelay ="0s";
-}
-function openTab3(){
-  content1.style.transform = "translateX(100%)";
-  content2.style.transform = "translateX(100%)";
-  content3.style.transform = "translateX(-200%)";
-  content1.style.transtitionDelay ="0s";
-  content2.style.transtitionDelay ="0.3s";
-  content3.style.transtitionDelay ="0s";
-}
-
-  </script>
+  <script src="../js/tabs.js"></script>
+  
 </body>
 </html>
