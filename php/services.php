@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="..//css/style.css">
+  <link rel="stylesheet" type="text/css" href="..//css/services style.css">
   <link rel="stylesheet" type="text/css" href="../css/section2.css">
-  <link rel="stylesheet" href="../css/services.css">
+  
+  <!-- <link rel="stylesheet" type="text/css" href="../css/services.css"> -->
+  <link href ="https://font.googleapis.com/css?family=Poppins&display=swap" rel = "stylesheet">
 
 </head>
 <body>
@@ -24,6 +26,25 @@
 <p style="text-align: center; color: white; font-family: Roboto Condensed;font-size: 24px">We'd like to hear from you!</p>
     <p style="text-align: center; color: white; font-family: Roboto; font: 28px; font-weight: 100; font-size: 18px">______________________________</p>
     <br><br><br>
+    </section>
+
+    <section>
+      <div class="hero">
+        <div class = "btn-box">
+          <button style ="color: black; font-family: 'Poppins', sans-serif; font-wieght: bold">Quality Report</button>
+          <button style ="color: black; font-family: 'Poppins', sans-serif; font-wieght: bold">Utilities</button>
+          <button style ="color: black; font-family: 'Poppins', sans-serif; font-wieght: bold">Projects and Proposals</button>
+      </div>
+      <div class="content">
+          <div class ="content-left">
+            <h1>Quality Report</h1>
+            <p>Clean water demands sustainable industrialization, intact ecosystems and responsible consumption. Targeted, individual approaches are likely to have knock-on effects and unintended consequences, but an integrated approach will greatly enhance the chances of success of the goals.</p>
+          </div>
+          <div class ="content-right">
+            <img src="../img/services3.png"
+          </div>
+      </div>
+    </div>
     </section>
 
    
