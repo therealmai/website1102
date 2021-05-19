@@ -82,7 +82,8 @@ hr.new4{
     width: 80%;
     height: 450px;
     position: relative;
-    margin: 100px auto;
+    margin: 10px auto;
+    overflow: hidden;
   }
   
   .btn-box{
@@ -100,24 +101,38 @@ hr.new4{
     font-weight: bold;
   }
   .content-right img{
-      width: 350px;
+      width: 250px;
   }
   .content{
       display: flex;
       justify-content: center;
       text-align: center;
-      margin: 5% auto;
+      margin: 2% auto;
+      position: absolute;
+      transform: translate(100%);
+      transition: 0.3s;
   }
 
   .content-left{
       flex-basis: 50%;
   }
+
+  .content-left p{
+    font-size: 16px;
+    padding: 30px 0;
+}
   .content-right{
       flex-basis: 50%;
       text-align: center;
   }
 
+  #content1{
+      transform: translateX(0);
+  }
   
+  #btn1{
+      color: #ff7486;
+  }
   
 /* Ending CSS */
 

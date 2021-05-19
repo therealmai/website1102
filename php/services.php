@@ -31,17 +31,39 @@
     <section>
       <div class="hero">
         <div class = "btn-box">
-          <button style ="color: black; font-family: 'Poppins', sans-serif; font-wieght: bold">Quality Report</button>
-          <button style ="color: black; font-family: 'Poppins', sans-serif; font-wieght: bold">Utilities</button>
-          <button style ="color: black; font-family: 'Poppins', sans-serif; font-wieght: bold">Projects and Proposals</button>
+          <button id="btn1" onclick ="openTab1()" style ="color: black; font-family: 'Poppins', sans-serif; font-weight: bold">Quality Report</button>
+          <button id="btn2" onclick ="openTab2()" style ="color: black; font-family: 'Poppins', sans-serif; font-weight: bold">Utilities</button>
+          <button id="btn3" onclick ="openTab3()" style ="color: black; font-family: 'Poppins', sans-serif; font-weight: bold">Projects and Proposals</button>
       </div>
-      <div class="content">
+      <!-- Start of the contents -->
+      <!-- First Content TAB-->
+      <div id="content1" class="content">
           <div class ="content-left">
             <h1>Quality Report</h1>
             <p>Clean water demands sustainable industrialization, intact ecosystems and responsible consumption. Targeted, individual approaches are likely to have knock-on effects and unintended consequences, but an integrated approach will greatly enhance the chances of success of the goals.</p>
           </div>
           <div class ="content-right">
             <img src="../img/services3.png"
+          </div>
+      </div>
+<!-- SECOND CONTENT TAB -->
+      <div id="content2" class="content">
+          <div class ="content-left">
+            <h1>Utilities</h1>
+            <p>A well-run water utility is essential to people’s lives. Only the most efficient, financially viable utilities are able to respond to urban growth, connect the poor, and improve wastewater disposal practices.AquaPro utilities help to identify the capacity gaps in order to better serve customers and set themselves up for potential risks and/or shocks to the water supply and wastewater systems.</p>
+          </div>
+          <div class ="content-right">
+            <img src="../img/services1.png"
+          </div>
+      </div>
+<!-- THIRD CONTENT TAB -->
+      <div id="content3" class="content">
+          <div class ="content-left">
+            <h1>Projects and Proposals</h1>
+            <p>We have planned projects to improve and exapnd our services. Project Proposals contain key information about your project. They are essential for our benefactors since they’ll use them to evaluate our project and determine whether or not they’ll allocate funds for it.</p>
+          </div>
+          <div class ="content-right">
+            <img src="../img/services2.png"
           </div>
       </div>
     </div>
@@ -87,6 +109,39 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script src="../js/typewrite.js"></script>
-  <script src="../js/tabs.js"></script>
+  <script>
+var content1 = document.getElementById("content1");
+var content2 = document.getElementById("content2");
+var content3 = document.getElementById("content3");
+var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById("btn2");
+var btn3 = document.getElementById("btn3");
+
+function openTab1(){
+  content1.style.transform = "translateX(0)";
+  content2.style.transform = "translateX(100%)";
+  content3.style.transform = "translateX(100%)";
+  content1.style.transtitionDelay ="0.3s";
+  content2.style.transtitionDelay ="0s";
+  content3.style.transtitionDelay ="0s";
+}
+function openTab2(){
+  content1.style.transform = "translateX(100%)";
+  content2.style.transform = "translateX(-100%)";
+  content3.style.transform = "translateX(100%)";
+  content1.style.transtitionDelay ="0s";
+  content2.style.transtitionDelay ="0.3s";
+  content3.style.transtitionDelay ="0s";
+}
+function openTab3(){
+  content1.style.transform = "translateX(100%)";
+  content2.style.transform = "translateX(100%)";
+  content3.style.transform = "translateX(-200%)";
+  content1.style.transtitionDelay ="0s";
+  content2.style.transtitionDelay ="0.3s";
+  content3.style.transtitionDelay ="0s";
+}
+
+  </script>
 </body>
 </html>
