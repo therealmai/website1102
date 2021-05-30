@@ -1,16 +1,11 @@
-
 <?php
-echo "ASFERHEDHJFEDHEDXFDEFH"; 
+
 session_start();
 // Initialize the session
 if(isset($_POST['submit'])){
 
  
-// Check if the user is already logged in, if yes then redirect him to welcome page
-// if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === TRUE){
-//     header("location: ../index.php");
-//     exit;
-// }
+
  
 // Include config file
 require_once "database_connect.php";
@@ -19,16 +14,18 @@ require_once "database_connect.php";
             if (empty($_POST['email'])) {
             $errors[1] = 1;
             $errortxt = 'Username or email required';
+           
         }
 
            else if (empty($_POST['password'])) {
                 $errors[2] = 2;
                 $errortxt = 'Password required';
+                
             }
                 $username = $_POST['email'];
                 $password = $_POST['password'];
 
-                var_dump($errortxt);
+                
     // Validate credentials
     if (empty($errors) === TRUE) {
         // Prepare a select statement
@@ -40,7 +37,7 @@ require_once "database_connect.php";
             mysqli_stmt_bind_param($stmt, "s", $param_email);
             
             // Set parameters
-            $param_email = $email;
+            $param_email = $username;
             
             
             // Attempt to execute the prepared statement
@@ -59,7 +56,7 @@ require_once "database_connect.php";
                         
                         if(password_verify($password, $hashed_password)){
                             // Password is correct, so start a new session
-                            session_start();
+                            
                             // Store data in session variables
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
@@ -70,11 +67,17 @@ require_once "database_connect.php";
                         } else{
                             // Password is not valid, display a generic error message
                             $errortxt = "Invalid username or password.";
+                            echo "<script type='text/javascript'>alert('$errortxt');</script>";
+                            header("Refresh:0 url=../login.php");
+                            
                         }
                     }
                 } else{
                     // Username doesn't exist, display a generic error message
                     $errortxt = "Invalid username or password.";
+                    echo "<script type='text/javascript'>alert('$errortxt');</script>";
+                    header("Refresh:0 url=../login.php");
+                   
                 }
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
@@ -85,12 +88,15 @@ require_once "database_connect.php";
         }
     }
     else {
-        echo "<script>alert($errortxt);</script>";
+         echo "<script type='text/javascript'>alert('$errortxt');</script>";
+         header("Refresh:0 url=../login.php");
+        
     }
     // Close connection
     mysqli_close($mysqli);
 }
 
-header("location: ../login.php");
+
 
 ?>
+
