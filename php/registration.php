@@ -133,15 +133,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type = "text/javascript">
-$(function(){
-$('#submit').click(function(){
-    swal({
+ $("#submit").click(function(){
+            var valid = this.form.checkValidity();
+            if(valid){
+                swal({
                 title: "Successfully submitted",
                 icon: "success",
                 button: "Go",
-             )}
-        )};
-    });
+            }) 
+        });
+
 </script>
 
 </body>
